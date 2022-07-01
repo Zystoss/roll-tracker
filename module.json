@@ -1,5 +1,5 @@
 {
-    "name": "roll-tracker",
+    "name": "roll-tracker-main",
     "title": "Roll Tracker",
     "description": "A simple module which tracks the rolls made and logs them by each user.",
     "authors": [
