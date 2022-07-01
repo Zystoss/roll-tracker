@@ -240,7 +240,7 @@ class RollTracker {
     static async parseMessage(chatMessage, system) {
         const isBlind = chatMessage.data.blind
         const rollRequirements = {
-            isd20: chatMessage._roll.dice?.[0].faces === 100,
+            isd100: chatMessage._roll.dice?.[0].faces === 100,
             blindCheck: (!isBlind) || (isBlind && game.settings.get(this.ID, this.SETTINGS.COUNT_HIDDEN)) || (isBlind && game.users.get(chatMessage.user.id)?.isGM),
         }
         switch (system) {
